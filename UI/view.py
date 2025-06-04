@@ -37,7 +37,7 @@ class View(ft.UserControl):
         self._btnCerca = ft.ElevatedButton(text="Cerca Percorso Massimo",
                                            on_click=self._controller.handleCerca, disabled=True)
 
-        self._ddNode = ft.Dropdown(label="Node", disabled=True)
+        self._ddNode = ft.Dropdown(label="Node")
         cont2 = ft.Container(self._ddNode, width=250, alignment=ft.alignment.top_left)
         row2 = ft.Row([cont2, ft.Container(self._btnCerca, width=250)
         ], alignment=ft.MainAxisAlignment.CENTER)
